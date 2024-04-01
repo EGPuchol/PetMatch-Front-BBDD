@@ -1,0 +1,52 @@
+[{
+    "nombre": "Yoel",
+    "apellidos": "Rodriguez",
+    "misAnimales": [],
+    "image": "https://media.licdn.com/dms/image/D4D35AQGKMzxV5VjYlQ/profile-framedphoto-shrink_400_400/0/1706716561537?e=1708689600&v=beta&t=kyQWUHN0SujR2ZW7v5gWGX9xtTOis5rcuYSu8sEkEPQ", 
+    "mail": "joel@mail.com", 
+    "password": "12345678", 
+    "role": "user"
+    },
+
+{
+    "nombre": "Guillermo",
+    "apellidos": "Torrres",
+    "misAnimales": [],
+    "image": "https://media.licdn.com/dms/image/D4D35AQGKMzxV5VjYlQ/profile-framedphoto-shrink_400_400/0/1706716561537?e=1708689600&v=beta&t=kyQWUHN0SujR2ZW7v5gWGX9xtTOis5rcuYSu8sEkEPQ", 
+    "mail": "guille@mail.com", 
+    "password": "12345678", 
+    "role": "user"   
+},
+
+{
+    "nombre": "Enrique",
+    "apellidos": "Gomez",
+    "misAnimales": [],
+    "image": "https://media.licdn.com/dms/image/D4E35AQFFDR7mX8tbBQ/profile-framedphoto-shrink_400_400/0/1691590620631?e=1708819200&v=beta&t=o9mcy9CQwLs94Zia3upJAVibWgqd4x9QQBZXmkrUOwQ", 
+    "mail": "enrique@mail.com", 
+    "password": "12345678", 
+    "role": "user"   
+},
+
+{
+    "nombre": "Mario",
+    "apellidos": "Martin",
+    "misAnimales": [],
+    "image": "https://media.licdn.com/dms/image/C4D03AQEUEe22JC5RMQ/profile-displayphoto-shrink_100_100/0/1588694075873?e=1713398400&v=beta&t=-hp96b1rsVUAuU9k-xKv90s-sIzHN4Z9HV0_cteY5xU", 
+    "mail": "mario@mail.com", 
+    "password": "12345678", 
+    "role": "user"   
+},
+
+{
+    "nombre": "Fernando",
+    "apellidos": "Giannattasio",
+    "misAnimales": ["65ccce9425aa66143af122da"],
+    "image": "https://media.licdn.com/dms/image/D5635AQHc-BqCMsU7yg/profile-framedphoto-shrink_100_100/0/1646582553537?e=1708819200&v=beta&t=GBPAEfrt4VwrH3l06QbQuW0La7pHxeKTw-gY-OS80W0", 
+    "mail": "fer@mail.com", 
+    "password": "12345678", 
+    "role": "user"   
+}
+
+
+]

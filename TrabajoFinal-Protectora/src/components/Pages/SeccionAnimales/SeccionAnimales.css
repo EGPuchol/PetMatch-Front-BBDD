@@ -1,0 +1,461 @@
+.estadoAdopcion{
+  text-decoration: none;
+  color:#8bc34a;
+  border: solid 2px #8bc34a;
+  border-radius: 5px;
+  width: 82vw;
+  padding-left: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flecha_adopcion_Link{
+  width: 16px;
+  margin-right: 10px;
+}
+
+
+.screen_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  overflow-y: auto;
+  padding-top: 20px;
+  /* border-bottom: solid 3px white; */
+  border-bottom: solid -8px white;
+
+  padding: 40px;
+  /* height: calc(100vh - 60px); */
+}
+
+.nav_container{
+  height: 0;
+  width: 0;
+  color: white;
+  background-color: white;
+}
+
+.Nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #8bc34a;
+  padding-left: 0px;
+  border-top: solid 2px rgb(163, 229, 87);
+}
+
+.main_animal_container {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 350px;
+  margin-top: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.individual_animal_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid: 0%;
+  width: 350px;
+  height: 265px;
+  padding: 14px;
+  margin-bottom: 37px;
+  border: solid 2px #8bc34a;
+  /* background-image: linear-gradient(to top left, rgba(139, 195, 74, 0.7), transparent); */
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.animal_photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  width: 95%;
+  max-height: 220px;
+  img {
+    height: auto;
+    width: 316px;
+    border: solid 2px #8bc34a;
+    border-radius: 3px;
+    height: 205px;
+    /* max-height: 205px; */
+    object-fit: cover;
+    object-position: top 20px;
+    /* width: auto; */
+  }
+}
+
+.animal_data {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 5px;
+  .animal_name {
+    font-size: 12px;
+    color: #8bc34a;
+    h2 {
+      margin: 0;
+    }
+  }
+}
+
+.linkAnimalAdopcion {
+  text-decoration: none; /* Quitar el subrayado del enlace */
+}
+
+.linkAnimalAdopcion h2,
+.linkAnimalAdopcion p {
+  text-decoration: none; /* También quitar el subrayado de los elementos dentro del enlace */
+}
+
+.animal_city {
+  font-size: 10px;
+  p {
+    margin: 0;
+    color: black;
+  }
+}
+
+/* FILTROS */
+
+.buscador input {
+  border: 2px solid #8bc34a; 
+  border-radius: 30px;
+  margin-bottom: 10px;
+  width: 82vw;
+  padding-left: 12px;
+}
+
+.buscador input:focus {
+  outline: none; 
+  border-color: #8bc34a; 
+}
+
+.buscador input::placeholder {
+  padding-left: 10px; 
+}
+
+.filter_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-left: 45px; */
+  width: 81vw;
+  /* height: 27px; */
+}
+
+.btn_filtros_adopcion_container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.btn_filtros_adopcion{
+  margin-bottom: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.filter_main_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  img {
+    width: 20px;
+    height: 20px;
+    transform: rotate(-90deg);
+  }
+}
+
+.filter_buttons slide-down{
+  display: flex;
+  flex-direction: column;
+}
+
+.filter_buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 5px;
+  gap: 10px;
+  img {
+    width: 25px;
+    height: 25px;
+  }
+  p{
+    font-size: 12px;
+  }
+}
+
+.filter_btn_ciudad{
+  width: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+  label{
+    margin-right: 10px;
+  }
+}
+
+.filter_btn_animales{
+  label{
+    margin-bottom: 50px;
+  }
+  .button_group{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap:14px;
+    .button_with_image{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* margin: 5px; */
+      width: 100px;
+      height: 55px;
+      img{
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+.main_animal_buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.filter_btn_sex{
+  label{
+    margin-left: 10px;
+  }
+  .button_group{
+    display: flex;
+    flex-direction: row;
+    .button_with_image{
+      width: 100px;
+      margin-right: 8px;
+      margin-left: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img{
+        margin-top: 6px;
+      }
+    }
+  }
+}
+
+.filter_btn_size {
+  label {
+    margin-left: 8px;
+  }
+  .button_group {
+    display: flex;
+    flex-direction: row;
+    .button_with_image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 8px;
+      margin-left: 8px;
+      width: 100px;
+      /* Aplica las clases de tamaño directamente a las imágenes */
+      img.Pequeño {
+        transform: scale(0.75);
+        margin-top: 1px;
+      }
+      img.Mediano {
+        transform: scale(1);
+        margin-top: 1px;
+
+      }
+      img.Grande {
+        transform: scale(1.25);
+        margin-top: 3px;
+
+      }
+    }
+  }
+}
+
+
+.apply_button{
+  background-color: #8bc34a;
+  color: white
+}
+
+
+.active_filter_button {
+  background-color: #8bc34a; /* Cambia el color de fondo para resaltar */
+  /* Agrega otros estilos de resaltado según sea necesario */
+}
+
+/* Estilos para los botones */
+.button_group button {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Estilos para los botones activos */
+.button_group button.active_button {
+  background-color: #8bc34a; /* Color de fondo cuando está activo */
+}
+
+.slide-down {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease;
+}
+.slide-down.active {
+  max-height: 1000px; /* Establece una altura máxima suficientemente grande */
+}
+@media (min-width: 768px){
+.main_animal_container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100vw;
+}
+
+  .individual_animal_container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    /* margin-right: 10px;
+    margin-left: 20px; */
+    margin-bottom: 15px;
+  }
+  .filter_container{
+    display: flex;
+    align-items: start;
+    /* margin-left: 110px;  */
+  }
+  .buscador{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .filter_container{
+    display: flex;
+    align-items: start;
+    margin-top: 15px;
+  }
+
+  .filter_btn_animales{
+    label{
+      margin-bottom: 50px;
+    }
+    .button_group{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      gap:14px;
+      .button_with_image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* margin: 5px; */
+        width: 120px;
+        height: 65px;
+        img{
+          width: 32px;
+          height: 32px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+
+}
+
+@media (min-width: 1440px){
+
+  .screen_container{
+    border-bottom: 0;
+  }
+
+  .buscador{
+    margin-top: 80px;
+    margin-bottom: 10px;
+  }
+  .main_animal_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .individual_animal_container{
+    width: 350px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+.filter_btn_animales{
+  label{
+    margin-bottom: 50px;
+  }
+  .button_group{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap:14px;
+    .button_with_image{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* margin: 5px; */
+      width: 100px;
+      height: 55px;
+      img{
+        width: 27px;
+        height: 27px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+}

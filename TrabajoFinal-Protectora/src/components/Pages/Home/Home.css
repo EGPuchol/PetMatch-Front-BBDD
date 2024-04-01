@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.primeracceder{
+    
+    border-radius: 50px;
+    border: 3px solid #c4ef92;
+    background-color: #8bc34a;
+    padding: 5px 15px;
+    color: white;}
+
+
+/*Carrousel*/
+.card__item{
+    display: flex;
+    width: 80%;
+    height: 135px;
+    background-color: #c4ef92;
+    border: 3px solid #8bc34a;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 120px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    margin-bottom: 20px;
+    
+}
+.image__home--slide{
+    top: -200px;
+   
+
+}
+.item__image1{
+    
+    width: 50%;
+    padding-top: 12px;
+    margin-right: 15px;
+
+}
+
+.item__image2{
+    width: 70%;
+    margin-right: 15px;
+}
+.item__image3{
+    width: 60%;
+    padding-top: 10px;
+    margin-right: 15px;
+}
+
+
+.item__text{
+    width: 100%;
+    margin-top: 5px;
+}
+.card__title{
+    font-size: 18px;
+    color: black;
+margin-top: 10px;
+    
+}
+.card__subtitle{
+    color: black;
+}
+
+
+
+
+
+
+
+/*Articulos*/
+.layout__articles{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0 25px;
+}
+.articles__title{
+    font-size: 35px;
+    text-align: center;
+    color:#70a237;
+    text-shadow: 3px 3px 25px rgba(102, 136, 0, 1);
+    
+}
+
+.articles__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    list-style: none;
+}
+.article__item{
+    margin-bottom: 50px;
+    background-color: #c4ef92;
+    border: 4px solid #8bc34a;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+.img__item{
+    width: 100%;
+   
+    border-radius: 10px;   
+}
+
+.article__text{
+padding-top: 10px;
+    list-style: none;
+}
+.p-accordion-header-text{
+    color: black;
+}
+.p-accordion-content{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.article__title{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 10px;
+    padding-left: 3px;
+    
+    
+}
+.Nav {
+    /* margin-top: 50px; */
+    position: fixed;
+    bottom: 0; /* Fija la posición en la parte inferior */
+    left: 0;
+    width: 100%;
+    background-color: #8bc34a;
+    padding: 10px;
+    border-top: solid 2px rgb(163, 229, 87);
+}
+
+@media (min-width: 768px){
+    .card__item{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        width: 60%;
+        
+    }
+
+    .item__image1{
+        width: 35%;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        top: 140px;
+      
+    }
+    .item__image2{
+        width: 42%;
+        top: 140px;
+    }
+    .item__image3{
+        width: 45%;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        top: 140px;
+    }
+    .item__text{
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .card__title{
+        font-size: 30px;
+    }
+    .card__subtitle{
+        font-size: 17px;
+    }
+
+    .articles__title{
+        font-size: 60px;
+    }
+
+    .layout__articles{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (min-width: 1440px){
+    .Nav{
+        position: absolute;
+        top: 0%;
+        margin-top: -2px;
+        z-index: 99;
+    }
+
+    .card__item{
+        height: 200px;
+        margin-top: 100px;
+        margin-left: -0px;
+    }
+    .item__image1{
+        width: 35%;
+        top: 100px;
+    }
+    .item__image2{
+        width: 40%;
+        top: 100px;
+    }
+    .item__image3{
+        width: 40%;
+        top: 100px;
+    }
+
+    .item__text{
+        margin-left: 50px;
+    }
+    .card__title{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .card__subtitle{
+        font-size: 25px;
+        
+    }
+
+    .articles__list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 60px;
+        justify-content: center;
+    }
+    .article__item{
+        width: 45%;
+        height: auto;
+    }
+
+    .articles__title{
+        font-size: 100px;
+        margin-bottom: 50px;
+    }
+    .img__item{
+        width: 100%;
+        height: 300px;
+    }
+    .article__title{
+        font-size: 25px;
+    }
+}

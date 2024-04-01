@@ -1,0 +1,596 @@
+/* .Nav{
+  margin-top: 30px;
+} */
+
+.main_screen_details_container{
+  /* margin-bottom: 30px; */
+  height: 100%;
+  padding-bottom: 1px;
+}
+
+.btn_volver_detalle_container {
+  position: relative;
+  z-index: 0;
+}
+.volver_btn_detalle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+  color: #8bc34a;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 50px;
+  width: 60px;
+  text-align: center;
+}
+
+.menuDetalle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.custom-btn.btn-4 {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  position: relative; /* Para posicionar el pseudo-elemento */
+}
+
+.custom-btn.btn-4::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  background-color: #8bc34a; /* Color de la línea */
+  position: absolute;
+  bottom: -2px; /* Posiciona la línea debajo del texto */
+  left: 0;
+  transition: width 0.3s ease; /* Transición para la animación */
+}
+
+.custom-btn.btn-4.active::after {
+  width: 100%; /* Ancho completo para la línea */
+}
+
+.animalfoto {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.nombreCiudad {
+  background-color: #c4ef92;
+  border: 3px solid #8bc34a;
+  border-radius: 0 0 8px 8px;
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  bottom: 15px;
+  position: relative;
+  font-size: 18px;
+}
+
+.historia {
+  border: 3px solid #8bc34a;
+  text-align: justify;
+  padding: 5px;
+}
+
+.detalleDatos {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.detallesespecie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.detallesNacimiento {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detallesexo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detalletamano {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detallepeso {
+  display: flex;
+  justify-content: space-between;
+}
+
+.personalidad2 {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.interior2 {
+  border: 3px solid #8bc34a;
+  background-color: #c4ef92;
+  width: 30%;
+  height: 40px;
+  border-radius: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fotopatita {
+  width: 45px;
+}
+
+.detalleespecie2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.detallenacimiento2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.detallesexo2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.detalletamano2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.detallepeso2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.detallepersonalidad {
+  color: #8bc34a;
+  font-size: 20px;
+}
+
+.historia {
+  border: 3px solid #8bc34a;
+  text-align: justify;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-btn.btn-4 {
+  color: #8bc34a;
+  font-size: 25px;
+}
+
+.detallesbuttonadoptar2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.detallesbuttonadoptar {
+  border: 3px solid #8bc34a;
+  background-color: #c4ef92;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 90%; /* Utiliza un posicionamiento fijo para el modal */
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -30px; 
+}
+
+.fotomodal {
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: -10px;
+}
+
+.tituloadopcion {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.parrafoadopcion {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.preguntaadopcion2 {
+  font-size: 18px;
+  color: #8bc34a;
+  margin: 18px;
+  text-align: center;
+}
+
+.cancelaradoptar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (min-width: 767px) {
+.Nav{
+  margin-top: 0;
+}
+
+  .fotonombreciudad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    .btn_volver_detalle_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .volver_btn_detalle{
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.0);
+      }
+    }
+    .nombreCiudad {
+      border-radius: 8px;
+    }
+  }
+  .animalfoto {
+    width: 60%;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: 3px solid #8bc34a;
+  }
+  .nombreCiudad {
+    display: flex;
+    align-items: center;
+    width: 90%;
+
+    margin-left: 35px;
+    p {
+      font-size: 30px;
+    }
+  }
+  .menuDetalle {
+    width: 90%;
+    margin-left: 35px;
+  }
+  .detallesespecie {
+    margin-left: 40px;
+  }
+  .detalleespecie2 {
+    margin-right: 40px;
+  }
+  .detallenacimiento2 {
+    margin-right: 40px;
+  }
+  .detallesNacimiento {
+    margin-left: 40px;
+  }
+  .detallesexo {
+    margin-left: 40px;
+  }
+  .detallesexo2 {
+    margin-right: 40px;
+  }
+  .detalletamano {
+    margin-left: 40px;
+  }
+  .detallepeso {
+    margin-left: 40px;
+  }
+
+  .personalidad {
+    margin-bottom: -20px;
+  }
+  .detallepersonalidad {
+    margin-left: 20px;
+  }
+  .historia {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 65px;
+  }
+  .detallesbuttonadoptar {
+    margin-bottom: 30px;
+  }
+
+  .detallesSalud {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .detallesadopcion {
+    width: 80%;
+  }
+  .rectangulopreguntas {
+    margin-left: 100px;
+  }
+
+/* POPUP */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 70%; /* Utiliza un posicionamiento fijo para el modal */
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -30px; 
+}
+
+.fotomodal {
+  object-fit: cover;
+  width: 50%;
+  margin-bottom: -10px;
+}
+
+.tituloadopcion {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.parrafoadopcion {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.preguntaadopcion2 {
+  font-size: 18px;
+  color: #8bc34a;
+  margin: 18px;
+  text-align: center;
+}
+
+.cancelaradoptar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .detallesbuttonadoptar{
+    margin: 20px;
+    margin-top: 0;
+  }
+}
+
+}
+@media (min-width: 1440px) {
+  .fotonombreciudad {
+    a {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .animalfoto {
+    width: 50%;
+    height: auto;
+    margin-top: 80px;
+    border-radius: 20px;
+    border: 3px solid #8bc34a;
+  }
+  .nombreCiudad {
+    display: flex;
+    align-items: center;
+    width: 80%;
+
+    margin-left: 150px;
+    p {
+      font-size: 40px;
+    }
+  }
+  .menuDetalle {
+    width: 80%;
+    margin-left: 150px;
+    margin-bottom: 20px;
+  }
+  .detallesespecie {
+    margin-left: 150px;
+    margin-bottom: 20px;
+  }
+  .detalleespecie2 {
+    margin-right: 150px;
+  }
+  .detallenacimiento2 {
+    margin-right: 150px;
+  }
+  .detallesNacimiento {
+    margin-left: 150px;
+    margin-bottom: 20px;
+  }
+  .detallesexo {
+    margin-left: 150px;
+    margin-bottom: 20px;
+  }
+  .detallesexo2 {
+    margin-right: 150px;
+  }
+  .detalletamano {
+    margin-left: 150px;
+    margin-bottom: 20px;
+  }
+  .detallepeso {
+    margin-left: 150px;
+    margin-bottom: 20px;
+  }
+  .detallepersonalidad {
+    margin-left: 150px;
+  }
+  .historia {
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 185px;
+  }
+  .detallesbuttonadoptar {
+    margin-bottom: 60px;
+  }
+
+  .detallesSalud {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .detallesadopcion {
+    width: 80%;
+  }
+  .rectangulopreguntas {
+    margin-left: 230px;
+  }
+
+  .fotonombreciudad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    .btn_volver_detalle_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .volver_btn_detalle{
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.0);
+        margin-top: 60px;
+        margin-left: 30px;
+      }
+    }
+    .nombreCiudad {
+      border-radius: 8px;
+    }
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+  }
+  
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 70%; /* Utiliza un posicionamiento fijo para el modal */
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px; 
+  }
+  
+  .fotomodal {
+    object-fit: cover;
+    width: 50%;
+    margin-bottom: -10px;
+  }
+  
+  .tituloadopcion {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  
+  .parrafoadopcion {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .preguntaadopcion2 {
+    font-size: 18px;
+    color: #8bc34a;
+    margin: 18px;
+    text-align: center;
+  }
+  
+  .cancelaradoptar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .detallesbuttonadoptar{
+      margin: 20px;
+      margin-top: 0;
+    }
+  }
+
+}

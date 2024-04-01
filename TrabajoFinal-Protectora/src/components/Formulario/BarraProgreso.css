@@ -1,0 +1,14 @@
+.barraProgreso-container {
+    width: 100%;
+    background-color:  #c5e1a5; /* Versión más clara del color de los tramos completados */
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;  /*Añade espacio encima de la barra */
+    margin-bottom: 20px; /*Espacio adicional debajo de la barra */
+  }
+
+  .barraProgreso {
+    height: 8px; /* Hace la barra más fina */
+    background-color: #8bc34a; /* Color de los tramos completados */
+    transition: width 0.4s ease;
+  }
